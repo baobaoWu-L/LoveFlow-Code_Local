@@ -114,17 +114,17 @@ export type ThemeSetting = (typeof THEME_SETTINGS)[number]
  */
 const lightTheme: Theme = {
   autoAccept: 'rgb(215,80,130)', // LoveFlow pink
-  bashBorder: 'rgb(150,100,220)', // LoveFlow purple
-  claude: 'rgb(180,105,215)', // LoveFlow purple
-  claudeShimmer: 'rgb(255,145,185)', // Lighter LoveFlow pink for shimmer effect
+  bashBorder: 'rgb(130,80,200)', // Deep purple
+  claude: 'rgb(150,80,190)', // Deep purple
+  claudeShimmer: 'rgb(200,80,145)', // Deep shimmer pink
   claudeBlue_FOR_SYSTEM_SPINNER: 'rgb(87,105,247)', // Medium blue for system spinner
   claudeBlueShimmer_FOR_SYSTEM_SPINNER: 'rgb(117,135,255)', // Lighter blue for system spinner shimmer
-  permission: 'rgb(170,85,200)', // LoveFlow purple
-  permissionShimmer: 'rgb(200,125,220)', // Lighter LoveFlow purple for shimmer
+  permission: 'rgb(140,65,180)', // Deep purple
+  permissionShimmer: 'rgb(170,105,200)', // Lighter deep purple for shimmer
   planMode: 'rgb(180,60,120)', // Muted pink
   ide: 'rgb(200,90,140)', // Pinkish
-  promptBorder: 'rgb(170,120,190)', // Purple-gray
-  promptBorderShimmer: 'rgb(190,140,210)', // Lighter purple-gray for shimmer effect
+  promptBorder: 'rgb(140,100,180)', // Deep purple-gray
+  promptBorderShimmer: 'rgb(160,120,200)', // Lighter deep purple-gray for shimmer effect
   text: 'rgb(0,0,0)', // Black
   inverseText: 'rgb(255,255,255)', // White
   inactive: 'rgb(160,120,130)', // Pinkish gray
@@ -439,17 +439,17 @@ const lightDaltonizedTheme: Theme = {
  */
 const darkTheme: Theme = {
   autoAccept: 'rgb(255,120,180)', // LoveFlow pink
-  bashBorder: 'rgb(180,120,255)', // LoveFlow purple
-  claude: 'rgb(200,120,255)', // LoveFlow purple
-  claudeShimmer: 'rgb(255,155,200)', // Lighter LoveFlow pink for shimmer effect
+  bashBorder: 'rgb(150,90,220)', // Deep purple
+  claude: 'rgb(160,90,220)', // Deep purple
+  claudeShimmer: 'rgb(210,85,155)', // Deep shimmer pink
   claudeBlue_FOR_SYSTEM_SPINNER: 'rgb(147,165,255)', // Blue for system spinner
   claudeBlueShimmer_FOR_SYSTEM_SPINNER: 'rgb(177,195,255)', // Lighter blue for system spinner shimmer
-  permission: 'rgb(200,140,255)', // LoveFlow purple
-  permissionShimmer: 'rgb(220,170,255)', // Lighter LoveFlow purple for shimmer
+  permission: 'rgb(160,110,220)', // Deep purple
+  permissionShimmer: 'rgb(180,135,230)', // Lighter deep purple for shimmer
   planMode: 'rgb(255,100,160)', // Pink
   ide: 'rgb(200,100,150)', // Muted pink
-  promptBorder: 'rgb(160,120,200)', // Purple-gray
-  promptBorderShimmer: 'rgb(180,140,220)', // Lighter purple-gray for shimmer
+  promptBorder: 'rgb(130,90,180)', // Deep purple-gray
+  promptBorderShimmer: 'rgb(150,110,200)', // Lighter deep purple-gray for shimmer
   text: 'rgb(255,255,255)', // White
   inverseText: 'rgb(0,0,0)', // Black
   inactive: 'rgb(180,150,160)', // Pinkish gray
@@ -525,8 +525,8 @@ const darkDaltonizedTheme: Theme = {
   claudeShimmer: 'rgb(240,130,180)', // Lighter pink for shimmer effect
   claudeBlue_FOR_SYSTEM_SPINNER: 'rgb(153,204,255)', // Light blue for system spinner
   claudeBlueShimmer_FOR_SYSTEM_SPINNER: 'rgb(183,224,255)', // Lighter blue for system spinner shimmer
-  permission: 'rgb(180,105,200)', // Purple
-  permissionShimmer: 'rgb(220,140,195)', // Lighter pink for shimmer
+  permission: 'rgb(180,105,200)', // Deep purple
+  permissionShimmer: 'rgb(200,130,220)', // Lighter deep purple for shimmer
   planMode: 'rgb(180,80,130)', // Pink
   ide: 'rgb(71,130,200)', // Muted blue
   promptBorder: 'rgb(136,136,136)', // Medium gray

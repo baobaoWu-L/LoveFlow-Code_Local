@@ -114,9 +114,9 @@ export type ThemeSetting = (typeof THEME_SETTINGS)[number]
  */
 const lightTheme: Theme = {
   autoAccept: 'rgb(135,0,255)', // Electric violet
-  bashBorder: 'rgb(150,100,220)', // LoveFlow purple
-  claude: 'rgb(180,105,215)', // LoveFlow purple
-  claudeShimmer: 'rgb(255,145,185)', // Lighter LoveFlow pink for shimmer effect
+  bashBorder: 'rgb(130,80,200)', // Deep purple
+  claude: 'rgb(150,80,190)', // Deep purple
+  claudeShimmer: 'rgb(200,80,145)', // Deep shimmer pink
   claudeBlue_FOR_SYSTEM_SPINNER: 'rgb(87,105,247)', // Medium blue for system spinner
   claudeBlueShimmer_FOR_SYSTEM_SPINNER: 'rgb(117,135,255)', // Lighter blue for system spinner shimmer
   permission: 'rgb(87,105,247)', // Medium blue
@@ -439,9 +439,9 @@ const lightDaltonizedTheme: Theme = {
  */
 const darkTheme: Theme = {
   autoAccept: 'rgb(175,135,255)', // Electric violet
-  bashBorder: 'rgb(150,100,220)', // LoveFlow purple
-  claude: 'rgb(200,120,255)', // LoveFlow purple
-  claudeShimmer: 'rgb(255,155,200)', // Lighter LoveFlow pink for shimmer effect
+  bashBorder: 'rgb(150,90,220)', // Deep purple
+  claude: 'rgb(160,90,220)', // Deep purple
+  claudeShimmer: 'rgb(210,85,155)', // Deep shimmer pink
   claudeBlue_FOR_SYSTEM_SPINNER: 'rgb(147,165,255)', // Blue for system spinner
   claudeBlueShimmer_FOR_SYSTEM_SPINNER: 'rgb(177,195,255)', // Lighter blue for system spinner shimmer
   permission: 'rgb(177,185,249)', // Light blue-purple
