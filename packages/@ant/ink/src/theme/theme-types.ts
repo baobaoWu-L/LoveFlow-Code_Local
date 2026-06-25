@@ -116,7 +116,7 @@ const lightTheme: Theme = {
   autoAccept: 'rgb(135,0,255)', // Electric violet
   bashBorder: 'rgb(105,55,175)', // Deep purple (dim)
   claude: 'rgb(120,55,185)', // Deep purple (dim)
-  claudeShimmer: 'rgb(200,80,145)', // Deep shimmer pink
+  claudeShimmer: 'rgb(255,145,185)', // LoveFlow pink shimmer
   claudeBlue_FOR_SYSTEM_SPINNER: 'rgb(87,105,247)', // Medium blue for system spinner
   claudeBlueShimmer_FOR_SYSTEM_SPINNER: 'rgb(117,135,255)', // Lighter blue for system spinner shimmer
   permission: 'rgb(87,105,247)', // Medium blue
@@ -441,7 +441,7 @@ const darkTheme: Theme = {
   autoAccept: 'rgb(175,135,255)', // Electric violet
   bashBorder: 'rgb(110,60,180)', // Deep purple (dim)
   claude: 'rgb(130,65,200)', // Deep purple (dim)
-  claudeShimmer: 'rgb(210,85,155)', // Deep shimmer pink
+  claudeShimmer: 'rgb(255,155,200)', // LoveFlow pink shimmer
   claudeBlue_FOR_SYSTEM_SPINNER: 'rgb(147,165,255)', // Blue for system spinner
   claudeBlueShimmer_FOR_SYSTEM_SPINNER: 'rgb(177,195,255)', // Lighter blue for system spinner shimmer
   permission: 'rgb(177,185,249)', // Light blue-purple
