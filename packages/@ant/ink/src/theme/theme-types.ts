@@ -114,7 +114,7 @@ export type ThemeSetting = (typeof THEME_SETTINGS)[number]
  */
 const lightTheme: Theme = {
   autoAccept: 'rgb(135,0,255)', // Electric violet
-  bashBorder: 'rgb(255,0,135)', // Vibrant pink
+  bashBorder: 'rgb(150,100,220)', // LoveFlow purple
   claude: 'rgb(235,100,150)', // LoveFlow pink
   claudeShimmer: 'rgb(255,145,185)', // Lighter LoveFlow pink for shimmer effect
   claudeBlue_FOR_SYSTEM_SPINNER: 'rgb(87,105,247)', // Medium blue for system spinner
@@ -158,7 +158,7 @@ const lightTheme: Theme = {
   // Chrome colors
   chromeYellow: 'rgb(251,188,4)', // Chrome yellow
   // TUI V2 colors
-  clawd_body: 'rgb(150,100,220)', // LoveFlow purple
+  clawd_body: 'rgb(255,120,180)', // LoveFlow pink
   clawd_background: 'rgb(0,0,0)',
   userMessageBackground: 'rgb(240, 240, 240)', // Slightly darker grey for optimal contrast
   userMessageBackgroundHover: 'rgb(252, 252, 252)', // ≥250 to quantize distinct from base at 256-color level
@@ -240,7 +240,7 @@ const lightAnsiTheme: Theme = {
   // Chrome colors
   chromeYellow: 'ansi:yellow', // Chrome yellow
   // TUI V2 colors
-  clawd_body: 'ansi:magenta',
+  clawd_body: 'ansi:magentaBright',
   clawd_background: 'ansi:black',
   userMessageBackground: 'ansi:white',
   userMessageBackgroundHover: 'ansi:whiteBright',
@@ -277,7 +277,7 @@ const lightAnsiTheme: Theme = {
  */
 const darkAnsiTheme: Theme = {
   autoAccept: 'ansi:magentaBright',
-  bashBorder: 'ansi:magentaBright',
+  bashBorder: 'ansi:magenta',
   claude: 'ansi:magenta',
   claudeShimmer: 'ansi:magentaBright',
   claudeBlue_FOR_SYSTEM_SPINNER: 'ansi:blueBright',
@@ -321,7 +321,7 @@ const darkAnsiTheme: Theme = {
   // Chrome colors
   chromeYellow: 'ansi:yellowBright', // Chrome yellow
   // TUI V2 colors
-  clawd_body: 'ansi:magenta',
+  clawd_body: 'ansi:magentaBright',
   clawd_background: 'ansi:black',
   userMessageBackground: 'ansi:blackBright',
   userMessageBackgroundHover: 'ansi:white',
@@ -402,7 +402,7 @@ const lightDaltonizedTheme: Theme = {
   // Chrome colors
   chromeYellow: 'rgb(251,188,4)', // Chrome yellow
   // TUI V2 colors
-  clawd_body: 'rgb(150,100,220)', // LoveFlow purple
+  clawd_body: 'rgb(255,120,180)', // LoveFlow pink
   clawd_background: 'rgb(0,0,0)',
   userMessageBackground: 'rgb(220, 220, 220)', // Slightly darker grey for optimal contrast
   userMessageBackgroundHover: 'rgb(232, 232, 232)', // ≥230 to quantize distinct from base at 256-color level
@@ -439,7 +439,7 @@ const lightDaltonizedTheme: Theme = {
  */
 const darkTheme: Theme = {
   autoAccept: 'rgb(175,135,255)', // Electric violet
-  bashBorder: 'rgb(253,93,177)', // Bright pink
+  bashBorder: 'rgb(150,100,220)', // LoveFlow purple
   claude: 'rgb(255,120,170)', // LoveFlow pink
   claudeShimmer: 'rgb(235,159,127)', // Lighter claude orange for shimmer effect
   claudeBlue_FOR_SYSTEM_SPINNER: 'rgb(147,165,255)', // Blue for system spinner
@@ -483,7 +483,7 @@ const darkTheme: Theme = {
   // Chrome colors
   chromeYellow: 'rgb(251,188,4)', // Chrome yellow
   // TUI V2 colors
-  clawd_body: 'rgb(150,100,220)', // LoveFlow purple
+  clawd_body: 'rgb(255,120,180)', // LoveFlow pink
   clawd_background: 'rgb(0,0,0)',
   userMessageBackground: 'rgb(55, 55, 55)', // Lighter grey for better visual contrast
   userMessageBackgroundHover: 'rgb(70, 70, 70)',
@@ -564,7 +564,7 @@ const darkDaltonizedTheme: Theme = {
   // Chrome colors
   chromeYellow: 'rgb(251,188,4)', // Chrome yellow
   // TUI V2 colors
-  clawd_body: 'rgb(150,100,220)', // LoveFlow purple
+  clawd_body: 'rgb(255,120,180)', // LoveFlow pink
   clawd_background: 'rgb(0,0,0)',
   userMessageBackground: 'rgb(55, 55, 55)', // Lighter grey for better visual contrast
   userMessageBackgroundHover: 'rgb(70, 70, 70)',

@@ -114,7 +114,7 @@ export type ThemeSetting = (typeof THEME_SETTINGS)[number]
  */
 const lightTheme: Theme = {
   autoAccept: 'rgb(215,80,130)', // LoveFlow pink
-  bashBorder: 'rgb(235,80,150)', // LoveFlow pink
+  bashBorder: 'rgb(150,100,220)', // LoveFlow purple
   claude: 'rgb(235,100,150)', // LoveFlow warm pink
   claudeShimmer: 'rgb(255,145,185)', // Lighter LoveFlow pink for shimmer effect
   claudeBlue_FOR_SYSTEM_SPINNER: 'rgb(87,105,247)', // Medium blue for system spinner
@@ -123,8 +123,8 @@ const lightTheme: Theme = {
   permissionShimmer: 'rgb(230,120,190)', // Lighter pink-purple for shimmer
   planMode: 'rgb(180,60,120)', // Muted pink
   ide: 'rgb(200,90,140)', // Pinkish
-  promptBorder: 'rgb(200,160,170)', // Pink-gray
-  promptBorderShimmer: 'rgb(220,180,190)', // Lighter pink-gray for shimmer effect
+  promptBorder: 'rgb(170,120,190)', // Purple-gray
+  promptBorderShimmer: 'rgb(190,140,210)', // Lighter purple-gray for shimmer effect
   text: 'rgb(0,0,0)', // Black
   inverseText: 'rgb(255,255,255)', // White
   inactive: 'rgb(160,120,130)', // Pinkish gray
@@ -158,7 +158,7 @@ const lightTheme: Theme = {
   // Chrome colors
   chromeYellow: 'rgb(251,188,4)', // Chrome yellow
   // TUI V2 colors
-  clawd_body: 'rgb(150,100,220)', // LoveFlow purple
+  clawd_body: 'rgb(215,80,130)', // LoveFlow pink
   clawd_background: 'rgb(0,0,0)',
   userMessageBackground: 'rgb(252, 245, 248)', // Warm pink-gray
   userMessageBackgroundHover: 'rgb(255, 248, 250)', // Warmer hover
@@ -240,7 +240,7 @@ const lightAnsiTheme: Theme = {
   // Chrome colors
   chromeYellow: 'ansi:yellow', // Chrome yellow
   // TUI V2 colors
-  clawd_body: 'ansi:magenta',
+  clawd_body: 'ansi:magentaBright',
   clawd_background: 'ansi:black',
   userMessageBackground: 'ansi:white',
   userMessageBackgroundHover: 'ansi:whiteBright',
@@ -277,7 +277,7 @@ const lightAnsiTheme: Theme = {
  */
 const darkAnsiTheme: Theme = {
   autoAccept: 'ansi:magentaBright',
-  bashBorder: 'ansi:magentaBright',
+  bashBorder: 'ansi:magenta',
   claude: 'ansi:magentaBright',
   claudeShimmer: 'ansi:magentaBright',
   claudeBlue_FOR_SYSTEM_SPINNER: 'ansi:blueBright',
@@ -402,7 +402,7 @@ const lightDaltonizedTheme: Theme = {
   // Chrome colors
   chromeYellow: 'rgb(251,188,4)', // Chrome yellow
   // TUI V2 colors
-  clawd_body: 'rgb(140,90,210)', // LoveFlow purple
+  clawd_body: 'rgb(200,100,160)', // LoveFlow pink
   clawd_background: 'rgb(0,0,0)',
   userMessageBackground: 'rgb(220, 220, 220)', // Slightly darker grey for optimal contrast
   userMessageBackgroundHover: 'rgb(232, 232, 232)', // ≥230 to quantize distinct from base at 256-color level
@@ -439,7 +439,7 @@ const lightDaltonizedTheme: Theme = {
  */
 const darkTheme: Theme = {
   autoAccept: 'rgb(255,120,180)', // LoveFlow pink
-  bashBorder: 'rgb(255,100,170)', // LoveFlow pink
+  bashBorder: 'rgb(180,120,255)', // LoveFlow purple
   claude: 'rgb(255,120,170)', // LoveFlow bright pink
   claudeShimmer: 'rgb(255,155,200)', // Lighter LoveFlow pink for shimmer effect
   claudeBlue_FOR_SYSTEM_SPINNER: 'rgb(147,165,255)', // Blue for system spinner
@@ -448,8 +448,8 @@ const darkTheme: Theme = {
   permissionShimmer: 'rgb(255,170,215)', // Lighter pink for shimmer
   planMode: 'rgb(255,100,160)', // Pink
   ide: 'rgb(200,100,150)', // Muted pink
-  promptBorder: 'rgb(180,140,150)', // Pink-gray
-  promptBorderShimmer: 'rgb(200,160,170)', // Lighter pink-gray for shimmer
+  promptBorder: 'rgb(160,120,200)', // Purple-gray
+  promptBorderShimmer: 'rgb(180,140,220)', // Lighter purple-gray for shimmer
   text: 'rgb(255,255,255)', // White
   inverseText: 'rgb(0,0,0)', // Black
   inactive: 'rgb(180,150,160)', // Pinkish gray
@@ -483,7 +483,7 @@ const darkTheme: Theme = {
   // Chrome colors
   chromeYellow: 'rgb(251,188,4)', // Chrome yellow
   // TUI V2 colors
-  clawd_body: 'rgb(180,120,255)', // LoveFlow purple
+  clawd_body: 'rgb(255,120,180)', // LoveFlow pink
   clawd_background: 'rgb(0,0,0)',
   userMessageBackground: 'rgb(70, 45, 55)', // Warm dark pink-gray
   userMessageBackgroundHover: 'rgb(85, 55, 65)',
@@ -564,7 +564,7 @@ const darkDaltonizedTheme: Theme = {
   // Chrome colors
   chromeYellow: 'rgb(251,188,4)', // Chrome yellow
   // TUI V2 colors
-  clawd_body: 'rgb(170,110,230)', // LoveFlow purple
+  clawd_body: 'rgb(200,100,160)', // LoveFlow pink
   clawd_background: 'rgb(0,0,0)',
   userMessageBackground: 'rgb(55, 45, 50)', // Warm dark pink-gray
   userMessageBackgroundHover: 'rgb(70, 55, 60)',
