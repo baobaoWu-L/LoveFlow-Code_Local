@@ -116,7 +116,7 @@ const lightTheme: Theme = {
   autoAccept: 'rgb(215,80,130)', // LoveFlow pink
   bashBorder: 'rgb(150,100,220)', // LoveFlow purple
   claude: 'rgb(180,105,215)', // LoveFlow purple
-  claudeShimmer: 'rgb(210,145,230)', // Lighter LoveFlow purple for shimmer effect
+  claudeShimmer: 'rgb(255,145,185)', // Lighter LoveFlow pink for shimmer effect
   claudeBlue_FOR_SYSTEM_SPINNER: 'rgb(87,105,247)', // Medium blue for system spinner
   claudeBlueShimmer_FOR_SYSTEM_SPINNER: 'rgb(117,135,255)', // Lighter blue for system spinner shimmer
   permission: 'rgb(170,85,200)', // LoveFlow purple
@@ -279,7 +279,7 @@ const darkAnsiTheme: Theme = {
   autoAccept: 'ansi:magentaBright',
   bashBorder: 'ansi:magenta',
   claude: 'ansi:magenta',
-  claudeShimmer: 'ansi:magenta',
+  claudeShimmer: 'ansi:magentaBright',
   claudeBlue_FOR_SYSTEM_SPINNER: 'ansi:blueBright',
   claudeBlueShimmer_FOR_SYSTEM_SPINNER: 'ansi:blueBright',
   permission: 'ansi:magenta',
@@ -441,7 +441,7 @@ const darkTheme: Theme = {
   autoAccept: 'rgb(255,120,180)', // LoveFlow pink
   bashBorder: 'rgb(180,120,255)', // LoveFlow purple
   claude: 'rgb(200,120,255)', // LoveFlow purple
-  claudeShimmer: 'rgb(220,155,255)', // Lighter LoveFlow purple for shimmer effect
+  claudeShimmer: 'rgb(255,155,200)', // Lighter LoveFlow pink for shimmer effect
   claudeBlue_FOR_SYSTEM_SPINNER: 'rgb(147,165,255)', // Blue for system spinner
   claudeBlueShimmer_FOR_SYSTEM_SPINNER: 'rgb(177,195,255)', // Lighter blue for system spinner shimmer
   permission: 'rgb(200,140,255)', // LoveFlow purple
