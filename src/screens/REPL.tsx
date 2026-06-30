@@ -1570,7 +1570,12 @@ export function REPL({
   const lastMsg = messages.at(-1);
   const lastMsgIsHuman = lastMsg != null && isHumanTurn(lastMsg);
   useEffect(() => {
-    if (lastMsgIsHuman) {
+    // Only repin if the user hasn't scrolled recently — respects scroll-away,
+    // preventing a yank-to-bottom when a new human-type message lands while
+    // the user is reading older content. lastUserScrollTsRef is stamped by
+    // composedOnScroll on every user scroll action; starts at 0 so the first
+    // message (no prior scroll) always repins.
+    if (lastMsgIsHuman && Date.now() - lastUserScrollTsRef.current >= RECENT_SCROLL_REPIN_WINDOW_MS) {
       repinScroll();
     }
   }, [lastMsgIsHuman, lastMsg, repinScroll]);

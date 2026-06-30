@@ -440,15 +440,6 @@ async function executeUserInput(params: ExecuteUserInputParams): Promise<void> {
   // which transitions running→idle; cancelReservation() below is a no-op in
   // that case (only acts on dispatching state).
   try {
-    // Reserve the guard BEFORE processUserInput — processBashCommand awaits
-    // BashTool.call() and processSlashCommand awaits getMessagesForSlashCommand,
-    // so the guard must be active during those awaits to ensure concurrent
-    // handlePromptSubmit calls queue (via the isActive check above) instead
-    // of starting a second executeUserInput. This call is a no-op if the
-    // guard is already in dispatching (legacy queue-processor path).
-    queryGuard.reserve()
-    queryCheckpoint('query_process_user_input_start')
-
     const newMessages: Message[] = []
     let shouldQuery = false
     let allowedTools: string[] | undefined
@@ -472,6 +463,23 @@ async function executeUserInput(params: ExecuteUserInputParams): Promise<void> {
       setAbortController(null)
       return
     }
+
+    // Reserve the guard BEFORE processUserInput — processBashCommand awaits
+    // BashTool.call() and processSlashCommand awaits getMessagesForSlashCommand,
+    // so the guard must be active during those awaits to ensure concurrent
+    // handlePromptSubmit calls queue (via the isActive check above) instead
+    // of starting a second executeUserInput.
+    if (!queryGuard.reserve()) {
+      // Guard already in dispatching/running state — another executeUserInput
+      // is in flight. Enqueue commands and return early to prevent duplicate
+      // user messages from the race condition.
+      for (const cmd of commands) {
+        enqueue(cmd)
+      }
+      setAbortController(null)
+      return
+    }
+    queryCheckpoint('query_process_user_input_start')
 
     // Compute the workload tag for this turn. queueProcessor can batch a
     // cron prompt with a same-tick human prompt; only tag when EVERY
