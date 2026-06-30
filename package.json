@@ -6,11 +6,11 @@
   "author": "LoveFlow-Code",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/claude-code-best/claude-code.git"
+    "url": "git+https://github.com/baobaoWu-L/LoveFlow-Code.git"
   },
-  "homepage": "https://github.com/claude-code-best/claude-code#readme",
+  "homepage": "https://github.com/baobaoWu-L/LoveFlow-Code#readme",
   "bugs": {
-    "url": "https://github.com/claude-code-best/claude-code/issues"
+    "url": "https://github.com/baobaoWu-L/LoveFlow-Code/issues"
   },
   "keywords": [
     "loveflow",

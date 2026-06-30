@@ -24,7 +24,7 @@ npm install -g loveflow-code
 loveflow
 
 # 方式二：从源码运行
-git clone <repo-url>
+git clone https://github.com/baobaoWu-L/LoveFlow-Code.git
 cd loveflow-code
 bun install && bun run build && npm install -g .
 loveflow
@@ -100,3 +100,7 @@ LoveFlow-Code/
 ## 协议
 
 MIT License
+
+---
+
+**来源项目**：本 Fork 基于 [Claude Code](https://github.com/anthropics/claude-code)（Anthropic 官方 CLI）和 [claude-code-best/claude-code](https://github.com/claude-code-best/claude-code) 社区增强版，并在其基础上进行 LoveFlow 主题定制与功能优化。
