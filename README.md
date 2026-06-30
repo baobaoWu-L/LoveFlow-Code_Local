@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="images/LoveFlow.png" alt="LoveFlow" width="400"/>
+  <img src="https://raw.githubusercontent.com/baobaoWu-L/LoveFlow-Code/main/images/LoveFlow.png" alt="LoveFlow" width="400"/>
 </p>
 
 <h1 align="center">LoveFlow-Code</h1>
@@ -49,7 +49,7 @@ loveflow "帮我写一个 React 组件"
 ## 功能
 
 <p align="center">
-  <img src="images/code.png" alt="LoveFlow 代码示例" width="600"/>
+  <img src="https://raw.githubusercontent.com/baobaoWu-L/LoveFlow-Code/main/images/code.png" alt="LoveFlow 代码示例" width="600"/>
 </p>
 
 - **多模型支持** — Anthropic / OpenAI / Gemini / Grok
