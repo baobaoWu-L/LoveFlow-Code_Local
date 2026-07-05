@@ -37,12 +37,12 @@ function getInstallationPath(): string {
 
   if (isWindows) {
     // Convert to Windows-style path
-    const windowsPath = join(homeDir, '.local', 'bin', 'loveflow.exe');
+    const windowsPath = join(homeDir, '.local', 'bin', 'loveflowcode.exe');
     // Replace forward slashes with backslashes for Windows display
     return windowsPath.replace(/\//g, '\\');
   }
 
-  return '~/.local/bin/loveflow';
+  return '~/.local/bin/loveflowcode';
 }
 
 function SetupNotes({ messages }: { messages: string[] }): React.ReactNode {
@@ -185,12 +185,12 @@ function Install({ onDone, force, target }: InstallProps): React.ReactNode {
   useEffect(() => {
     if (state.type === 'success') {
       // Give success message time to render before exiting
-      setTimeout(onDone, 2000, 'LoveFlow-Code installation completed successfully', {
+      setTimeout(onDone, 2000, 'LoveFlowCode installation completed successfully', {
         display: 'system' as const,
       });
     } else if (state.type === 'error') {
       // Give error message time to render before exiting
-      setTimeout(onDone, 3000, 'LoveFlow-Code installation failed', {
+      setTimeout(onDone, 3000, 'LoveFlowCode installation failed', {
         display: 'system' as const,
       });
     }
@@ -203,7 +203,7 @@ function Install({ onDone, force, target }: InstallProps): React.ReactNode {
       {state.type === 'cleaning-npm' && <Text color="warning">Cleaning up old npm installations...</Text>}
 
       {state.type === 'installing' && (
-        <Text color="claude">Installing LoveFlow-Code native build {state.version}...</Text>
+        <Text color="claude">Installing LoveFlowCode native build {state.version}...</Text>
       )}
 
       {state.type === 'setting-up' && <Text color="claude">Setting up launcher and shell integration...</Text>}
@@ -215,7 +215,7 @@ function Install({ onDone, force, target }: InstallProps): React.ReactNode {
           <Box>
             <StatusIcon status="success" withSpace />
             <Text color="success" bold>
-              LoveFlow-Code successfully installed!
+              LoveFlowCode successfully installed!
             </Text>
           </Box>
           <Box marginLeft={2} flexDirection="column" gap={1}>
@@ -234,7 +234,7 @@ function Install({ onDone, force, target }: InstallProps): React.ReactNode {
             <Box marginTop={1}>
               <Text dimColor>Next: Run </Text>
               <Text color="claude" bold>
-                loveflow --help
+                loveflowcode --help
               </Text>
               <Text dimColor> to get started</Text>
             </Box>

@@ -161,9 +161,9 @@ function ClaudeInChromeMenu({
 
             <Text>
               <Text dimColor>Usage: </Text>
-              <Text>loveflow --chrome</Text>
+              <Text>loveflowcode --chrome</Text>
               <Text dimColor> or </Text>
-              <Text>loveflow --no-chrome</Text>
+              <Text>loveflowcode --no-chrome</Text>
             </Text>
 
             <Text dimColor>

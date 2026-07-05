@@ -87,7 +87,7 @@ export class AcpAgent implements Agent {
       authMethods: [],
       agentInfo: {
         name: 'claude-code',
-        title: 'LoveFlow-Code',
+        title: 'LoveFlowCode',
         version:
           typeof (globalThis as unknown as Record<string, unknown>).MACRO ===
             'object' &&

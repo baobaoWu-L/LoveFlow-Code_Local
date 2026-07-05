@@ -19,7 +19,7 @@ try {
     .map(l => l.trimEnd())
     .filter(l => l.length > 0);
 } catch {
-  LOVE_ART = ['  __  ', ' /\\ \\ ', ' \\_\\/ ', 'LoveFlow'];
+  LOVE_ART = ['  __  ', ' /\\ \\ ', ' \\_\\/ ', 'LoveFlowCode'];
 }
 
 export function Clawd(_props: Props = {}): React.ReactNode {

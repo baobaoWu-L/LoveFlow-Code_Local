@@ -1,31 +1,29 @@
-# LoveFlow-Code 🌸
+# LoveFlowCode 🌸
 
 <p align="center">
-  <img src="images/LoveFlow.png" alt="LoveFlow" width="400"/>
+  <img src="images/LoveFlow.png" alt="LoveFlowCode" width="400"/>
 </p>
 
 <p align="center">
-  <strong>AI Coding Assistant in Pink · LoveFlow Edition</strong>
+  <strong>Local AI Coding Assistant powered by Local LLM</strong>
 </p>
 
-A LoveFlow-branded fork of [Claude Code Best (CCB)](https://github.com/claude-code-best/claude-code), with pink theme, heart mascot, and LoveFlow identity.
+A LoveFlowCode-branded local LLM version of Claude Code, running Qwen3.5-9B locally without API keys.
 
 ## Quick Start
 
 ```bash
-loveflow
-loveflow --version
-loveflow "write a React component"
+loveflowcode
+loveflowcode --version
+loveflowcode "write a React component"
 ```
 
 ### Configuration
 
-Config files are at `~/.loveflow/settings.json`.
+Config files are at `~/.loveflowcode/settings.json`.
 
-### Multi-Provider Support
+### Local Model
 
-| Provider | Env |
-|----------|-----|
-| Anthropic | `ANTHROPIC_API_KEY` |
-| OpenAI | `CLAUDE_CODE_USE_OPENAI=1` + `OPENAI_API_KEY` |
-| Gemini | `CLAUDE_CODE_USE_GEMINI=1` + `GEMINI_API_KEY` |
+- **Model**: Qwen3.5-9B (Negentropy fine-tuned reasoning model)
+- **Location**: `D:\LLM\LoveFlow`
+- **No API Key Required** — runs completely offline

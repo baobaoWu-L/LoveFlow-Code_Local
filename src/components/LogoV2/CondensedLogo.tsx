@@ -46,8 +46,8 @@ export function CondensedLogo(): ReactNode {
   // Account for: condensed clawd width (11 chars) + gap (2) + padding (2) = 15 chars
   const textWidth = Math.max(columns - 15, 20);
 
-  // Truncate version to fit within available width, accounting for "LoveFlow-Code v" prefix
-  const versionPrefix = 'LoveFlow-Code v';
+  // Truncate version to fit within available width, accounting for "LoveFlowCode v" prefix
+  const versionPrefix = 'LoveFlowCode v';
   const truncatedVersion = truncate(version, Math.max(textWidth - versionPrefix.length, 6));
 
   const effortSuffix = getEffortSuffix(model, effortValue);
@@ -73,7 +73,7 @@ export function CondensedLogo(): ReactNode {
         {/* Info */}
         <Box flexDirection="column" alignItems="center">
           <Text>
-            <Text bold>LoveFlow-Code</Text> <Text dimColor>v{truncatedVersion}</Text>
+            <Text bold>LoveFlowCode</Text> <Text dimColor>v{truncatedVersion}</Text>
           </Text>
           {shouldSplit ? (
             <>

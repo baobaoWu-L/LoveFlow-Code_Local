@@ -33,6 +33,9 @@ Claude-Haiku-*.txt
 __pycache__/
 *.pyc
 logs
+# Model server artifacts
+model-server/__pycache__/
+vendor/llama/*.zip
 
 data
 .omc

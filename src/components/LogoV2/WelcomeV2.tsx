@@ -12,7 +12,7 @@ try {
   const text = readFileSync(artPath, 'utf-8');
   LOVE_ART = text.split('\n').filter(l => l.trim().length > 0);
 } catch {
-  LOVE_ART = ['LoveFlow'];
+  LOVE_ART = ['LoveFlowCode'];
 }
 
 export function WelcomeV2(): React.ReactNode {
@@ -23,7 +23,7 @@ export function WelcomeV2(): React.ReactNode {
         <Text color="clawd_body">{LOVE_ART.join('\n')}</Text>
         <Box marginTop={1}>
           <Text>
-            <Text color="claude">Welcome to LoveFlow-Code </Text>
+            <Text color="claude">Welcome to LoveFlowCode </Text>
             <Text dimColor>v{version}</Text>
           </Text>
         </Box>

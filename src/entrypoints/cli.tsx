@@ -79,7 +79,7 @@ async function main(): Promise<void> {
   // Fast-path for --version/-v: zero module loading needed
   if (args.length === 1 && (args[0] === '--version' || args[0] === '-v' || args[0] === '-V')) {
     // MACRO.VERSION is inlined at build time
-    console.log(`${MACRO.VERSION} (LoveFlow-Code)`);
+    console.log(`${MACRO.VERSION} (LoveFlowCode)`);
     return;
   }
 
@@ -352,6 +352,21 @@ async function main(): Promise<void> {
   // No special flags detected, load and run the full CLI
   const { startCapturingEarlyInput } = await import('../utils/earlyInput.js');
   startCapturingEarlyInput();
+
+  // --- LoveFlowCode: 自动启动本地模型服务器 ---
+  if (process.env.CLAUDE_CODE_USE_OPENAI === '1' && process.env.OPENAI_BASE_URL?.includes('localhost')) {
+    try {
+      const { ensureServer } = await import('../utils/modelServerStarter.js');
+      const server = await ensureServer();
+      // 更新 BASE_URL 指向实际端口
+      process.env.OPENAI_BASE_URL = `http://localhost:${server.port}/v1`;
+    } catch (err: unknown) {
+      console.error('[LoveFlowCode] 模型服务器启动失败:', err);
+      console.error('[LoveFlowCode] 请确保 LM Studio 正在运行');
+    }
+  }
+  // -------------------------------------------
+
   profileCheckpoint('cli_before_main_import');
   const { main: cliMain } = await import('../main.jsx');
   profileCheckpoint('cli_after_main_import');

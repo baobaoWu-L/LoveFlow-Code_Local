@@ -113,10 +113,10 @@ export type ThemeSetting = (typeof THEME_SETTINGS)[number]
  * from users' custom terminal ANSI color definitions
  */
 const lightTheme: Theme = {
-  autoAccept: 'rgb(215,80,130)', // LoveFlow pink
+  autoAccept: 'rgb(215,80,130)', // LoveFlowCode pink
   bashBorder: 'rgb(105,55,175)', // Deep purple (dim)
   claude: 'rgb(120,55,185)', // Deep purple (dim)
-  claudeShimmer: 'rgb(255,145,185)', // LoveFlow pink shimmer
+  claudeShimmer: 'rgb(255,145,185)', // LoveFlowCode pink shimmer
   claudeBlue_FOR_SYSTEM_SPINNER: 'rgb(87,105,247)', // Medium blue for system spinner
   claudeBlueShimmer_FOR_SYSTEM_SPINNER: 'rgb(117,135,255)', // Lighter blue for system spinner shimmer
   permission: 'rgb(115,50,165)', // Deep purple (dim)
@@ -131,12 +131,12 @@ const lightTheme: Theme = {
   inactiveShimmer: 'rgb(190,150,160)', // Lighter pink-gray for shimmer effect
   subtle: 'rgb(200,170,175)', // Light pink-gray
   suggestion: 'rgb(200,80,150)', // Pink-purple
-  remember: 'rgb(215,80,130)', // LoveFlow pink
+  remember: 'rgb(215,80,130)', // LoveFlowCode pink
   background: 'rgb(255,220,230)', // Warm pink bg
   success: 'rgb(44,122,57)', // Green
   error: 'rgb(171,43,63)', // Red
   warning: 'rgb(200,120,40)', // Amber
-  merged: 'rgb(215,80,130)', // LoveFlow pink
+  merged: 'rgb(215,80,130)', // LoveFlowCode pink
   warningShimmer: 'rgb(220,150,70)', // Lighter amber for shimmer effect
   diffAdded: 'rgb(105,219,124)', // Light green
   diffRemoved: 'rgb(255,168,180)', // Light red
@@ -158,7 +158,7 @@ const lightTheme: Theme = {
   // Chrome colors
   chromeYellow: 'rgb(251,188,4)', // Chrome yellow
   // TUI V2 colors
-  clawd_body: 'rgb(215,80,130)', // LoveFlow pink
+  clawd_body: 'rgb(215,80,130)', // LoveFlowCode pink
   clawd_background: 'rgb(0,0,0)',
   userMessageBackground: 'rgb(252, 245, 248)', // Warm pink-gray
   userMessageBackgroundHover: 'rgb(255, 248, 250)', // Warmer hover
@@ -167,13 +167,13 @@ const lightTheme: Theme = {
   bashMessageBackgroundColor: 'rgb(252, 242, 248)',
 
   memoryBackgroundColor: 'rgb(252, 235, 242)',
-  rate_limit_fill: 'rgb(235,100,150)', // LoveFlow pink
+  rate_limit_fill: 'rgb(235,100,150)', // LoveFlowCode pink
   rate_limit_empty: 'rgb(160,70,100)', // Dark pink
-  fastMode: 'rgb(235,80,140)', // LoveFlow pink
+  fastMode: 'rgb(235,80,140)', // LoveFlowCode pink
   fastModeShimmer: 'rgb(255,120,170)', // Lighter pink for shimmer
   // Brief/assistant mode
   briefLabelYou: 'rgb(37,99,235)', // Blue
-  briefLabelClaude: 'rgb(235,100,150)', // LoveFlow pink
+  briefLabelClaude: 'rgb(235,100,150)', // LoveFlowCode pink
   rainbow_red: 'rgb(235,95,87)',
   rainbow_orange: 'rgb(245,139,87)',
   rainbow_yellow: 'rgb(250,195,95)',
@@ -402,7 +402,7 @@ const lightDaltonizedTheme: Theme = {
   // Chrome colors
   chromeYellow: 'rgb(251,188,4)', // Chrome yellow
   // TUI V2 colors
-  clawd_body: 'rgb(200,100,160)', // LoveFlow pink
+  clawd_body: 'rgb(200,100,160)', // LoveFlowCode pink
   clawd_background: 'rgb(0,0,0)',
   userMessageBackground: 'rgb(220, 220, 220)', // Slightly darker grey for optimal contrast
   userMessageBackgroundHover: 'rgb(232, 232, 232)', // ≥230 to quantize distinct from base at 256-color level
@@ -413,10 +413,10 @@ const lightDaltonizedTheme: Theme = {
   memoryBackgroundColor: 'rgb(230, 245, 250)',
   rate_limit_fill: 'rgb(180,60,120)', // Pink-violet
   rate_limit_empty: 'rgb(100,30,70)', // Dark pink
-  fastMode: 'rgb(200,70,130)', // LoveFlow pink (color-blind safe)
+  fastMode: 'rgb(200,70,130)', // LoveFlowCode pink (color-blind safe)
   fastModeShimmer: 'rgb(230,110,170)', // Lighter pink for shimmer
   briefLabelYou: 'rgb(37,99,235)', // Blue
-  briefLabelClaude: 'rgb(200,70,130)', // LoveFlow pink
+  briefLabelClaude: 'rgb(200,70,130)', // LoveFlowCode pink
   rainbow_red: 'rgb(235,95,87)',
   rainbow_orange: 'rgb(245,139,87)',
   rainbow_yellow: 'rgb(250,195,95)',
@@ -438,10 +438,10 @@ const lightDaltonizedTheme: Theme = {
  * from users' custom terminal ANSI color definitions
  */
 const darkTheme: Theme = {
-  autoAccept: 'rgb(255,120,180)', // LoveFlow pink
+  autoAccept: 'rgb(255,120,180)', // LoveFlowCode pink
   bashBorder: 'rgb(110,60,180)', // Deep purple (dim)
   claude: 'rgb(130,65,200)', // Deep purple (dim)
-  claudeShimmer: 'rgb(255,155,200)', // LoveFlow pink shimmer
+  claudeShimmer: 'rgb(255,155,200)', // LoveFlowCode pink shimmer
   claudeBlue_FOR_SYSTEM_SPINNER: 'rgb(147,165,255)', // Blue for system spinner
   claudeBlueShimmer_FOR_SYSTEM_SPINNER: 'rgb(177,195,255)', // Lighter blue for system spinner shimmer
   permission: 'rgb(130,80,200)', // Deep purple (dim)
@@ -457,11 +457,11 @@ const darkTheme: Theme = {
   subtle: 'rgb(100,80,85)', // Dark pink-gray
   suggestion: 'rgb(255,140,190)', // Light pink
   remember: 'rgb(255,140,190)', // Light pink
-  background: 'rgb(255,120,170)', // LoveFlow pink
+  background: 'rgb(255,120,170)', // LoveFlowCode pink
   success: 'rgb(78,186,101)', // Bright green
   error: 'rgb(255,107,128)', // Bright red
   warning: 'rgb(255,193,7)', // Bright amber
-  merged: 'rgb(255,120,180)', // LoveFlow pink
+  merged: 'rgb(255,120,180)', // LoveFlowCode pink
   warningShimmer: 'rgb(255,223,57)', // Lighter amber for shimmer
   diffAdded: 'rgb(34,92,43)', // Dark green
   diffRemoved: 'rgb(122,41,54)', // Dark red
@@ -483,7 +483,7 @@ const darkTheme: Theme = {
   // Chrome colors
   chromeYellow: 'rgb(251,188,4)', // Chrome yellow
   // TUI V2 colors
-  clawd_body: 'rgb(255,120,180)', // LoveFlow pink
+  clawd_body: 'rgb(255,120,180)', // LoveFlowCode pink
   clawd_background: 'rgb(0,0,0)',
   userMessageBackground: 'rgb(70, 45, 55)', // Warm dark pink-gray
   userMessageBackgroundHover: 'rgb(85, 55, 65)',
@@ -494,10 +494,10 @@ const darkTheme: Theme = {
   memoryBackgroundColor: 'rgb(65, 45, 55)',
   rate_limit_fill: 'rgb(255,140,190)', // Light pink
   rate_limit_empty: 'rgb(130,70,100)', // Medium pink
-  fastMode: 'rgb(255,100,165)', // LoveFlow pink for dark bg
+  fastMode: 'rgb(255,100,165)', // LoveFlowCode pink for dark bg
   fastModeShimmer: 'rgb(255,140,195)', // Lighter pink for shimmer
   briefLabelYou: 'rgb(122,180,232)', // Light blue
-  briefLabelClaude: 'rgb(255,120,170)', // LoveFlow pink
+  briefLabelClaude: 'rgb(255,120,170)', // LoveFlowCode pink
   rainbow_red: 'rgb(235,95,87)',
   rainbow_orange: 'rgb(245,139,87)',
   rainbow_yellow: 'rgb(250,195,95)',
@@ -564,7 +564,7 @@ const darkDaltonizedTheme: Theme = {
   // Chrome colors
   chromeYellow: 'rgb(251,188,4)', // Chrome yellow
   // TUI V2 colors
-  clawd_body: 'rgb(200,100,160)', // LoveFlow pink
+  clawd_body: 'rgb(200,100,160)', // LoveFlowCode pink
   clawd_background: 'rgb(0,0,0)',
   userMessageBackground: 'rgb(55, 45, 50)', // Warm dark pink-gray
   userMessageBackgroundHover: 'rgb(70, 55, 60)',
@@ -575,10 +575,10 @@ const darkDaltonizedTheme: Theme = {
   memoryBackgroundColor: 'rgb(55, 48, 55)',
   rate_limit_fill: 'rgb(200,100,160)', // Pink-violet
   rate_limit_empty: 'rgb(100,50,80)', // Dark pink
-  fastMode: 'rgb(220,90,140)', // LoveFlow pink for dark bg (color-blind safe)
+  fastMode: 'rgb(220,90,140)', // LoveFlowCode pink for dark bg (color-blind safe)
   fastModeShimmer: 'rgb(240,130,180)', // Lighter pink for shimmer
   briefLabelYou: 'rgb(122,180,232)', // Light blue
-  briefLabelClaude: 'rgb(220,90,140)', // LoveFlow pink
+  briefLabelClaude: 'rgb(220,90,140)', // LoveFlowCode pink
   rainbow_red: 'rgb(235,95,87)',
   rainbow_orange: 'rgb(245,139,87)',
   rainbow_yellow: 'rgb(250,195,95)',

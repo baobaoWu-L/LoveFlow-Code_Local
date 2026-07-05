@@ -334,10 +334,10 @@ describe('getClaudeConfigHomeDir', () => {
     expect(getClaudeConfigHomeDir()).toBe('/tmp/test-claude')
   })
 
-  test('returns a string ending with .loveflow by default', () => {
-    delete process.env.LOVEFLOW_CONFIG_DIR
+  test('returns a string ending with .loveflowcode by default', () => {
+    delete process.env.LOVEFLOWCODE_CONFIG_DIR
     delete process.env.CLAUDE_CONFIG_DIR
     const result = getClaudeConfigHomeDir()
-    expect(result).toMatch(/\.loveflow$/)
+    expect(result).toMatch(/\.loveflowcode$/)
   })
 })

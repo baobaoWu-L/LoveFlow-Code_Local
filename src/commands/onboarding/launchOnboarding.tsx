@@ -125,7 +125,7 @@ export const callOnboarding: LocalJSXCommandCall = async (onDone, _context, args
     }));
     onDone(
       'Workspace trust cleared for the current project. ' +
-        'The trust dialog will appear on the next `loveflow` launch.',
+        'The trust dialog will appear on the next `loveflowcode` launch.',
       { display: 'system' },
     );
     return null;

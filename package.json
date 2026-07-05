@@ -1,31 +1,32 @@
 {
-  "name": "loveflow-code",
-  "version": "3.0.2",
-  "description": "LoveFlow-Code — AI coding assistant with purple LoveFlow theme",
+  "name": "loveflowcode",
+  "version": "1.0.0",
+  "description": "LoveFlowCode — Local AI coding assistant powered by local LLM",
   "type": "module",
-  "author": "LoveFlow-Code",
+  "author": "LoveFlowCode",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/baobaoWu-L/LoveFlow-Code.git"
+    "url": "git+https://github.com/baobaoWu-L/LoveFlow-Code_Local.git"
   },
-  "homepage": "https://github.com/baobaoWu-L/LoveFlow-Code#readme",
+  "homepage": "https://github.com/baobaoWu-L/LoveFlow-Code_Local#readme",
   "bugs": {
-    "url": "https://github.com/baobaoWu-L/LoveFlow-Code/issues"
+    "url": "https://github.com/baobaoWu-L/LoveFlow-Code_Local/issues"
   },
   "keywords": [
-    "loveflow",
+    "loveflowcode",
     "ai",
     "cli",
     "coding-assistant",
     "terminal",
-    "repl"
+    "repl",
+    "local-llm"
   ],
   "engines": {
     "node": ">=18.0.0"
   },
   "bin": {
-    "loveflow": "dist/cli-node.js",
-    "ccb": "dist/cli-node.js"
+    "loveflowcode": "dist/cli-node.js",
+    "loveflow": "dist/cli-node.js"
   },
   "workspaces": [
     "packages/*",
@@ -35,9 +36,12 @@
   "files": [
     "dist",
     "images",
+    "model-server",
     "scripts/postinstall.cjs",
     "scripts/run-parallel.mjs",
-    "scripts/setup-chrome-mcp.mjs"
+    "scripts/setup-chrome-mcp.mjs",
+    "scripts/setup-server.cjs",
+    "scripts/start-server.js"
   ],
   "scripts": {
     "build": "bun run build.ts",
@@ -70,7 +74,13 @@
   "dependencies": {
     "@agentclientprotocol/sdk": "^0.19.0",
     "@claude-code-best/mcp-chrome-bridge": "^3.0.1",
+    "graceful-fs": "^4.2.11",
     "highlight.js": "^11.11.1",
+    "jsonfile": "^6.2.1",
+    "node-llama-cpp": "^3.19.0",
+    "parse-ms": "^4.0.0",
+    "pretty-ms": "^9.3.0",
+    "universalify": "^2.0.1",
     "ws": "^8.20.0"
   },
   "devDependencies": {

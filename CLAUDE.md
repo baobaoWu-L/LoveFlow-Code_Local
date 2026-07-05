@@ -1,10 +1,10 @@
-# LoveFlow-Code
+# LoveFlowCode
 
-This file provides guidance to LoveFlow-Code and other AI coding agents when working with code in this repository.
+This file provides guidance to LoveFlowCode and other AI coding agents when working with code in this repository.
 
 ## Project Overview
 
-This is a **LoveFlow-Code** fork of the open-source Claude Code CLI tool, rebranded with pink theme and LoveFlow identity. TypeScript strict mode is enforced — **`bun run precheck` 必须零错误通过**（包含 typecheck + lint fix + test）。
+This is a **LoveFlowCode** fork of the open-source Claude Code CLI tool, rebranded with pink theme and LoveFlowCode identity. TypeScript strict mode is enforced — **`bun run precheck` 必须零错误通过**（包含 typecheck + lint fix + test）。
 
 ## Git Commit Message Convention
 

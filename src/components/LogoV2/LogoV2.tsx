@@ -200,8 +200,8 @@ export function LogoV2(): React.ReactNode {
   const layoutMode = getLayoutMode(columns);
 
   const userTheme = resolveThemeSetting(getGlobalConfig().theme);
-  const borderTitle = ` ${color('claude', userTheme)('LoveFlow-Code')} ${color('inactive', userTheme)(`v${version}`)} `;
-  const compactBorderTitle = color('claude', userTheme)(' LoveFlow-Code ');
+  const borderTitle = ` ${color('claude', userTheme)('LoveFlowCode')} ${color('inactive', userTheme)(`v${version}`)} `;
+  const compactBorderTitle = color('claude', userTheme)(' LoveFlowCode ');
 
   // Early return for compact mode
   if (layoutMode === 'compact') {
@@ -278,7 +278,7 @@ export function LogoV2(): React.ReactNode {
   // Calculate layout dimensions
   const { leftWidth, rightWidth } = calculateLayoutDimensions(columns, layoutMode, optimalLeftWidth);
 
-  const tips = ['Try "write a test for <filepath>"', 'Ask LoveFlow-Code to create a new app or clone a repository'];
+  const tips = ['Try "write a test for <filepath>"', 'Ask LoveFlowCode to create a new app or clone a repository'];
 
   return (
     <>

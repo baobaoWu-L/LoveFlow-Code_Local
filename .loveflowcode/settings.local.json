@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git clone *)",
+      "Bash(xargs grep -l \"color\\\\|theme\\\\|brand\\\\|logo\" -i)",
+      "Bash(mv claude-code/.claude/agents .claude/)",
+      "Bash(mv claude-code/.claude/skills .claude/)",
+      "Bash(rmdir claude-code/.claude)",
+      "Bash(rmdir claude-code *)",
+      "Bash(bun --version)",
+      "Bash(bun run *)",
+      "Bash(bunx --bun tsc --noEmit)",
+      "Bash(bun install *)",
+      "Bash(docker --version)",
+      "Bash(docker compose *)",
+      "Bash(docker container *)"
+    ]
+  }
+}

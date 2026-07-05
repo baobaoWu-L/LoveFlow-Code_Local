@@ -271,7 +271,7 @@ const externalTips: Tip[] = [
   {
     id: 'todo-list',
     content: async () =>
-      'Ask LoveFlow-Code to create a todo list when working on complex tasks to track progress and remain on track',
+      'Ask LoveFlowCode to create a todo list when working on complex tasks to track progress and remain on track',
     cooldownSessions: 20,
     isRelevant: async () => true,
   },

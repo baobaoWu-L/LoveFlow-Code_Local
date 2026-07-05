@@ -2,17 +2,17 @@ import memoize from 'lodash-es/memoize.js'
 import { homedir } from 'os'
 import { join } from 'path'
 
-// Memoized: 150+ callers, many on hot paths. Keyed off LOVEFLOW_CONFIG_DIR so
+// Memoized: 150+ callers, many on hot paths. Keyed off LOVEFLOWCODE_CONFIG_DIR so
 // tests that change the env var get a fresh value without explicit cache.clear.
 export const getClaudeConfigHomeDir = memoize(
   (): string => {
     return (
-      process.env.LOVEFLOW_CONFIG_DIR ??
+      process.env.LOVEFLOWCODE_CONFIG_DIR ??
       process.env.CLAUDE_CONFIG_DIR ??
-      join(homedir(), '.loveflow')
+      join(homedir(), '.loveflowcode')
     ).normalize('NFC')
   },
-  () => process.env.LOVEFLOW_CONFIG_DIR ?? process.env.CLAUDE_CONFIG_DIR,
+  () => process.env.LOVEFLOWCODE_CONFIG_DIR ?? process.env.CLAUDE_CONFIG_DIR,
 )
 
 export function getTeamsDir(): string {

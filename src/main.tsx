@@ -1151,8 +1151,8 @@ async function run(): Promise<CommanderCommand> {
   });
 
   program
-    .name('loveflow')
-    .description(`LoveFlow-Code - starts an interactive session by default, use -p/--print for non-interactive output`)
+    .name('loveflowcode')
+    .description(`LoveFlowCode - starts an interactive session by default, use -p/--print for non-interactive output`)
     .argument('[prompt]', 'Your prompt', String)
     // Subcommands inherit helpOption via commander's copyInheritedSettings —
     // setting it once here covers mcp, plugin, auth, and all other subcommands.
@@ -1447,7 +1447,7 @@ async function run(): Promise<CommanderCommand> {
       // Ignore "code" as a prompt - treat it the same as no prompt
       if (prompt === 'code') {
         logEvent('tengu_code_prompt_ignored', {});
-        console.warn(chalk.yellow('Tip: You can launch LoveFlow-Code with just `loveflow`'));
+        console.warn(chalk.yellow('Tip: You can launch LoveFlowCode with just `loveflowcode`'));
         prompt = undefined;
       }
 
@@ -4053,7 +4053,7 @@ async function run(): Promise<CommanderCommand> {
           if (!isRemoteTuiEnabled && !hasInitialPrompt) {
             return await exitWithError(
               root,
-              'Error: --remote requires a description.\nUsage: loveflow --remote "your task description"',
+              'Error: --remote requires a description.\nUsage: loveflowcode --remote "your task description"',
               () => gracefulShutdown(1),
             );
           }
@@ -4085,7 +4085,7 @@ async function run(): Promise<CommanderCommand> {
             // Original behavior: print session info and exit
             process.stdout.write(`Created remote session: ${createdSession.title}\n`);
             process.stdout.write(`View: ${getRemoteSessionUrl(createdSession.id)}?m=0\n`);
-            process.stdout.write(`Resume with: loveflow --teleport ${createdSession.id}\n`);
+            process.stdout.write(`Resume with: loveflowcode --teleport ${createdSession.id}\n`);
             await gracefulShutdown(0);
             process.exit(0);
           }
@@ -4206,7 +4206,7 @@ async function run(): Promise<CommanderCommand> {
                   } else {
                     // No known paths - show original error
                     throw new TeleportOperationError(
-                      `You must run loveflow --teleport ${teleport} from a checkout of ${sessionRepo}.`,
+                      `You must run loveflowcode --teleport ${teleport} from a checkout of ${sessionRepo}.`,
                       chalk.red(
                         `You must run claude --teleport ${teleport} from a checkout of ${chalk.bold(sessionRepo)}.\n`,
                       ),
@@ -4461,7 +4461,7 @@ async function run(): Promise<CommanderCommand> {
         );
       }
     })
-    .version(`${MACRO.VERSION} (LoveFlow-Code)`, '-v, --version', 'Output the version number');
+    .version(`${MACRO.VERSION} (LoveFlowCode)`, '-v, --version', 'Output the version number');
 
   // Worktree flags
   program.option('-w, --worktree [name]', 'Create a new git worktree for this session (optionally specify a name)');

@@ -35,7 +35,7 @@ export async function sendNotification(
   })
 }
 
-const DEFAULT_TITLE = 'LoveFlow-Code'
+const DEFAULT_TITLE = 'LoveFlowCode'
 
 async function sendToChannel(
   channel: string,
